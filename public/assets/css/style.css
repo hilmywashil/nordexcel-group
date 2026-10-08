@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #171717;
+    background: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif
+}
+
+::selection {
+    background: #FC6B01;
+    color: #fff
+}
+
+.container-custom {
+    width: min(1180px, calc(100% - 40px));
+    margin-inline: auto
+}
+
+@media(max-width:767px) {
+    .container-custom {
+        width: calc(100% - 30px)
+    }
+}
+
+.nav-link {
+    position: relative;
+    transition: color .25s
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #FC6B01;
+    transition: width .25s
+}
+
+.nav-link:hover {
+    color: #FC6B01
+}
+
+.nav-link:hover::after {
+    width: 100%
+}
+
+.service-item {
+    transition: transform .25s, border-color .25s, box-shadow .25s
+}
+
+.service-item:hover {
+    transform: translateY(-4px);
+    border-color: #FC6B01;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .05)
+}
+
+.article-item img {
+    transition: transform .4s
+}
+
+.article-item:hover img {
+    transform: scale(1.04)
+}
+
+/* ===== Carousel ===== */
+.carousel {
+    position: relative
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    touch-action: pan-y
+}
+
+.carousel-track {
+    display: flex;
+    margin: 0 -10px;
+    transition: transform .55s cubic-bezier(.22, .61, .36, 1);
+    will-change: transform
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    padding: 0 10px;
+    min-width: 0
+}
+
+@media(min-width:768px) {
+    .carousel-slide {
+        flex-basis: 50%
+    }
+}
+
+@media(min-width:1024px) {
+    .carousel-slide {
+        flex-basis: 33.3333%
+    }
+}
+
+.carousel-slide>* {
+    height: 100%
+}
+
+.carousel-btn {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CACACA;
+    background: #fff;
+    color: #171717;
+    transition: .25s
+}
+
+.carousel-btn:hover:not(:disabled) {
+    background: #FC6B01;
+    border-color: #FC6B01;
+    color: #fff
+}
+
+.carousel-btn:disabled {
+    opacity: .4;
+    cursor: not-allowed
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px
+}
+
+.carousel-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: #CACACA;
+    transition: .3s
+}
+
+.carousel-dots button.active {
+    width: 26px;
+    background: #FC6B01
+}
+
+/* ===== Logo marquee ===== */
+.marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite
+}
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused
+}
+
+.marquee-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 clamp(28px, 5vw, 56px)
+}
+
+.marquee-item img {
+    height: 44px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    filter: grayscale(1);
+    opacity: .6;
+    transition: .25s
+}
+
+.marquee-item img:hover {
+    filter: none;
+    opacity: 1
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .marquee-track {
+        animation: none
+    }
+
+    .carousel-track {
+        transition: none
+    }
+}

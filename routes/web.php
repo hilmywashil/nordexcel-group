@@ -3,7 +3,11 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SitemapController;
 
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])
+    ->name('sitemap');
+    
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/layanan', [PageController::class, 'layanan'])->name('layanan');
 Route::get('/tentang', [PageController::class, 'tentang'])->name('tentang');

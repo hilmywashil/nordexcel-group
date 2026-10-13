@@ -11,13 +11,15 @@
                         NordExcel Group
                     </p>
 
-                    <h1 class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-neutral-950 sm:text-5xl lg:text-[64px]">
+                    <h1
+                        class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-neutral-950 sm:text-5xl lg:text-[64px]">
                         Bangun Kehadiran Digital yang
                         <span class="text-[#FC6B01]">Lebih Profesional.</span>
                     </h1>
 
                     <p class="mt-7 max-w-xl text-base leading-7 text-neutral-600 sm:text-lg">
-                        NordExcel Group membantu bisnis membangun website dan sistem digital yang profesional, fungsional, dan dirancang sesuai kebutuhan bisnis.
+                        NordExcel Group membantu bisnis membangun website dan sistem digital yang profesional, fungsional,
+                        dan dirancang sesuai kebutuhan bisnis.
                     </p>
 
                     <div class="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -37,14 +39,12 @@
                 <div class="relative">
                     <div class="overflow-hidden rounded-lg border border-[#CACACA] bg-[#F5F5F5]">
                         <img src="{{ asset('assets/hero-bg.webp') }}"
-                            alt="Layanan pembuatan website dan sistem digital NordExcel Group"
-                            width="900"
-                            height="600"
-                            fetchpriority="high"
-                            class="h-[420px] w-full object-cover sm:h-[500px]">
+                            alt="Layanan pembuatan website dan sistem digital NordExcel Group" width="900" height="600"
+                            fetchpriority="high" class="h-[420px] w-full object-cover sm:h-[500px]">
                     </div>
 
-                    <div class="absolute -bottom-5 -left-4 hidden w-56 border border-[#CACACA] bg-white p-5 shadow-sm sm:block">
+                    <div
+                        class="absolute -bottom-5 -left-4 hidden w-56 border border-[#CACACA] bg-white p-5 shadow-sm sm:block">
                         <div class="mb-4 flex h-10 w-10 items-center justify-center bg-[#FC6B01] text-lg text-white">
                             <i class="bi bi-code-slash"></i>
                         </div>
@@ -107,7 +107,8 @@
                     <h3 class="text-xl font-bold">Toko Online</h3>
 
                     <p class="mt-3 text-sm leading-6 text-neutral-600">
-                        Solusi e-commerce untuk membantu bisnis menjual produk secara online dengan pengalaman belanja yang jelas.
+                        Solusi e-commerce untuk membantu bisnis menjual produk secara online dengan pengalaman belanja yang
+                        jelas.
                     </p>
                 </div>
 
@@ -119,7 +120,8 @@
                     <h3 class="text-xl font-bold">Landing Page</h3>
 
                     <p class="mt-3 text-sm leading-6 text-neutral-600">
-                        Halaman yang dirancang untuk campaign, promosi produk, pengumpulan leads, maupun kebutuhan marketing.
+                        Halaman yang dirancang untuk campaign, promosi produk, pengumpulan leads, maupun kebutuhan
+                        marketing.
                     </p>
                 </div>
 
@@ -175,7 +177,8 @@
                     </h2>
 
                     <p class="mt-5 leading-7 text-neutral-600">
-                        Kami fokus membuat solusi yang relevan dengan kebutuhan bisnis, bukan sekadar tampilan yang terlihat bagus.
+                        Kami fokus membuat solusi yang relevan dengan kebutuhan bisnis, bukan sekadar tampilan yang terlihat
+                        bagus.
                     </p>
                 </div>
 
@@ -187,7 +190,8 @@
                             <h3 class="text-lg font-bold">Dibuat Sesuai Kebutuhan</h3>
 
                             <p class="mt-2 text-sm leading-6 text-neutral-600">
-                                Setiap bisnis memiliki kebutuhan berbeda. Kami menyesuaikan struktur dan fitur berdasarkan tujuan proyek.
+                                Setiap bisnis memiliki kebutuhan berbeda. Kami menyesuaikan struktur dan fitur berdasarkan
+                                tujuan proyek.
                             </p>
                         </div>
                     </div>
@@ -199,7 +203,8 @@
                             <h3 class="text-lg font-bold">Fokus pada Pengalaman Pengguna</h3>
 
                             <p class="mt-2 text-sm leading-6 text-neutral-600">
-                                Navigasi yang jelas, informasi yang mudah dipahami, dan tampilan profesional menjadi bagian penting dari setiap project.
+                                Navigasi yang jelas, informasi yang mudah dipahami, dan tampilan profesional menjadi bagian
+                                penting dari setiap project.
                             </p>
                         </div>
                     </div>
@@ -211,7 +216,8 @@
                             <h3 class="text-lg font-bold">Komunikasi yang Transparan</h3>
 
                             <p class="mt-2 text-sm leading-6 text-neutral-600">
-                                Kami menjaga komunikasi selama proses pengerjaan agar progres dan kebutuhan project tetap terarah.
+                                Kami menjaga komunikasi selama proses pengerjaan agar progres dan kebutuhan project tetap
+                                terarah.
                             </p>
                         </div>
                     </div>
@@ -245,11 +251,13 @@
                     </h2>
 
                     <p class="mt-5 max-w-xl leading-7 text-neutral-600">
-                        NordExcel Group membantu bisnis dan organisasi membangun website serta solusi digital yang disesuaikan dengan kebutuhan mereka.
+                        NordExcel Group membantu bisnis dan organisasi membangun website serta solusi digital yang
+                        disesuaikan dengan kebutuhan mereka.
                     </p>
 
                     <p class="mt-4 max-w-xl leading-7 text-neutral-600">
-                        Kami percaya bahwa website bukan hanya tentang tampilan, tetapi juga tentang bagaimana sebuah bisnis menyampaikan informasi, membangun kepercayaan, dan berkembang secara digital.
+                        Kami percaya bahwa website bukan hanya tentang tampilan, tetapi juga tentang bagaimana sebuah bisnis
+                        menyampaikan informasi, membangun kepercayaan, dan berkembang secara digital.
                     </p>
 
                     <a href="{{ route('tentang') }}"
@@ -260,12 +268,8 @@
                 </div>
 
                 <div class="overflow-hidden border border-[#CACACA] bg-white">
-                    <img src="{{ asset('assets/about-img.webp') }}"
-                        alt="Tentang NordExcel Group"
-                        width="1000"
-                        height="750"
-                        loading="lazy"
-                        class="h-[360px] w-full object-cover sm:h-[440px]">
+                    <img src="{{ asset('assets/about-img.webp') }}" alt="Tentang NordExcel Group" width="1000" height="750"
+                        loading="lazy" class="h-[360px] w-full object-cover sm:h-[440px]">
                 </div>
             </div>
         </div>
@@ -273,10 +277,7 @@
 
     <section class="bg-[#F5F5F5] py-24">
         <div class="container-custom">
-            <div class="carousel"
-                data-carousel
-                data-autoplay="6000"
-                aria-roledescription="carousel"
+            <div class="carousel" data-carousel data-autoplay="6000" aria-roledescription="carousel"
                 aria-label="Testimonial client">
 
                 <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -302,17 +303,11 @@
                         </a>
 
                         <div class="flex gap-2">
-                            <button type="button"
-                                class="carousel-btn"
-                                data-prev
-                                aria-label="Sebelumnya">
+                            <button type="button" class="carousel-btn" data-prev aria-label="Sebelumnya">
                                 <i class="bi bi-arrow-left"></i>
                             </button>
 
-                            <button type="button"
-                                class="carousel-btn"
-                                data-next
-                                aria-label="Berikutnya">
+                            <button type="button" class="carousel-btn" data-next aria-label="Berikutnya">
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </div>
@@ -372,10 +367,7 @@
 
     <section class="py-24">
         <div class="container-custom">
-            <div class="carousel"
-                data-carousel
-                aria-roledescription="carousel"
-                aria-label="Artikel terbaru">
+            <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Artikel terbaru">
 
                 <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
                     <div>
@@ -396,17 +388,11 @@
                         </a>
 
                         <div class="flex gap-2">
-                            <button type="button"
-                                class="carousel-btn"
-                                data-prev
-                                aria-label="Sebelumnya">
+                            <button type="button" class="carousel-btn" data-prev aria-label="Sebelumnya">
                                 <i class="bi bi-arrow-left"></i>
                             </button>
 
-                            <button type="button"
-                                class="carousel-btn"
-                                data-next
-                                aria-label="Berikutnya">
+                            <button type="button" class="carousel-btn" data-next aria-label="Berikutnya">
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </div>
@@ -417,21 +403,22 @@
                     <div class="carousel-track">
                         @forelse ($articles as $article)
                             <div class="carousel-slide">
-                                <article class="article-item flex flex-col overflow-hidden border border-[#CACACA] bg-white">
-                                    <div class="overflow-hidden">
+                                <article
+                                    class="article-item flex h-full flex-col overflow-hidden border border-[#CACACA] bg-white">
+                                    <a href="{{ route('artikel.detail', $article->slug) }}"
+                                        class="group block overflow-hidden bg-[#F5F5F5]"
+                                        aria-label="Baca artikel {{ $article->title }}">
                                         @if ($article->thumbnail)
-                                            <img loading="lazy"
-                                                width="800"
-                                                height="500"
-                                                src="{{ asset('storage/' . $article->thumbnail) }}"
-                                                alt="{{ $article->title }}"
-                                                class="h-56 w-full object-cover">
+                                            <img loading="lazy" width="800" height="500"
+                                                src="{{ asset('storage/' . $article->thumbnail) }}" alt="{{ $article->title }}"
+                                                class="h-56 w-full object-cover transition duration-500 group-hover:scale-105">
                                         @else
-                                            <div class="flex h-56 w-full items-center justify-center bg-[#F5F5F5] text-sm text-neutral-400">
+                                            <div
+                                                class="flex h-56 w-full items-center justify-center bg-[#F5F5F5] text-sm text-neutral-400">
                                                 NordExcel Group
                                             </div>
                                         @endif
-                                    </div>
+                                    </a>
 
                                     <div class="flex flex-1 flex-col p-6">
                                         @if ($article->category)
@@ -440,8 +427,11 @@
                                             </p>
                                         @endif
 
-                                        <h3 class="mt-3 text-lg font-bold leading-7">
-                                            {{ $article->title }}
+                                        <h3 class="mt-3 text-lg font-bold leading-7 text-neutral-950">
+                                            <a href="{{ route('artikel.detail', $article->slug) }}"
+                                                class="transition hover:text-[#FC6B01]">
+                                                {{ $article->title }}
+                                            </a>
                                         </h3>
 
                                         @if ($article->excerpt)
@@ -451,7 +441,7 @@
                                         @endif
 
                                         <a href="{{ route('artikel.detail', $article->slug) }}"
-                                            class="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-neutral-900">
+                                            class="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-neutral-900 transition hover:text-[#FC6B01]">
                                             Baca Artikel
                                             <i class="bi bi-arrow-right"></i>
                                         </a>
@@ -469,7 +459,6 @@
                         @endforelse
                     </div>
                 </div>
-
                 <div class="carousel-dots mt-8 justify-center" data-dots></div>
             </div>
         </div>
@@ -486,18 +475,13 @@
             </h2>
         </div>
 
-        <div class="marquee mt-12"
-            data-marquee
-            aria-label="Logo client kami">
+        <div class="marquee mt-12" data-marquee aria-label="Logo client kami">
 
             <div class="marquee-track">
                 @forelse ($clients as $client)
                     <div class="marquee-item">
                         @if ($client->logo)
-                            <img loading="lazy"
-                                src="{{ asset('storage/' . $client->logo) }}"
-                                alt="{{ $client->name }}"
-                                width="150"
+                            <img loading="lazy" src="{{ asset('storage/' . $client->logo) }}" alt="{{ $client->name }}" width="150"
                                 height="60">
                         @else
                             <span class="text-sm font-semibold text-neutral-500">
@@ -516,8 +500,7 @@
         </div>
 
         <div class="container-custom mt-10 text-center">
-            <a href="{{ route('klien') }}"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-[#FC6B01]">
+            <a href="{{ route('klien') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-[#FC6B01]">
                 Lihat Semua Klien
                 <i class="bi bi-arrow-up-right"></i>
             </a>

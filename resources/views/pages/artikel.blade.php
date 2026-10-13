@@ -38,15 +38,23 @@
 
                 <article class="mt-12 grid overflow-hidden border border-[#CACACA] bg-white lg:grid-cols-2">
                     <div class="overflow-hidden bg-[#F5F5F5]">
-                        @if ($featuredArticle->thumbnail)
-                            <img src="{{ asset('storage/' . $featuredArticle->thumbnail) }}" alt="{{ $featuredArticle->title }}"
-                                width="1000" height="700" fetchpriority="high" class="h-full min-h-[320px] w-full object-cover">
-                        @else
-                            <div
-                                class="flex min-h-[320px] h-full w-full items-center justify-center bg-[#F5F5F5] text-sm text-neutral-400">
-                                NordExcel Group
-                            </div>
-                        @endif
+                        <a href="{{ route('artikel.detail', $featuredArticle->slug) }}"
+                            class="group block h-full"
+                            aria-label="Baca artikel {{ $featuredArticle->title }}">
+                            @if ($featuredArticle->thumbnail)
+                                <img
+                                    src="{{ asset('storage/' . $featuredArticle->thumbnail) }}"
+                                    alt="{{ $featuredArticle->title }}"
+                                    width="1000"
+                                    height="700"
+                                    fetchpriority="high"
+                                    class="h-full min-h-[320px] w-full object-cover transition duration-500 group-hover:scale-105">
+                            @else
+                                <div class="flex min-h-[320px] h-full w-full items-center justify-center bg-[#F5F5F5] text-sm text-neutral-400">
+                                    NordExcel Group
+                                </div>
+                            @endif
+                        </a>
                     </div>
 
                     <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
@@ -57,7 +65,10 @@
                         @endif
 
                         <h2 class="mt-4 text-2xl font-bold leading-tight tracking-[-0.025em] text-neutral-950 sm:text-3xl">
-                            {{ $featuredArticle->title }}
+                            <a href="{{ route('artikel.detail', $featuredArticle->slug) }}"
+                                class="transition hover:text-[#FC6B01]">
+                                {{ $featuredArticle->title }}
+                            </a>
                         </h2>
 
                         @if ($featuredArticle->excerpt)
@@ -107,17 +118,23 @@
                 <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     @foreach ($articles as $article)
                         <article class="article-item flex h-full flex-col overflow-hidden border border-[#CACACA] bg-white">
-                            <div class="overflow-hidden bg-[#F5F5F5]">
+                            <a href="{{ route('artikel.detail', $article->slug) }}"
+                                class="group block overflow-hidden bg-[#F5F5F5]"
+                                aria-label="Baca artikel {{ $article->title }}">
                                 @if ($article->thumbnail)
-                                    <img loading="lazy" width="800" height="500" src="{{ asset('storage/' . $article->thumbnail) }}"
+                                    <img
+                                        loading="lazy"
+                                        width="800"
+                                        height="500"
+                                        src="{{ asset('storage/' . $article->thumbnail) }}"
                                         alt="{{ $article->title }}"
-                                        class="h-56 w-full object-cover transition duration-500 hover:scale-105">
+                                        class="h-56 w-full object-cover transition duration-500 group-hover:scale-105">
                                 @else
                                     <div class="flex h-56 w-full items-center justify-center bg-[#F5F5F5] text-sm text-neutral-400">
                                         NordExcel Group
                                     </div>
                                 @endif
-                            </div>
+                            </a>
 
                             <div class="flex flex-1 flex-col p-6">
                                 @if ($article->category)
@@ -127,7 +144,10 @@
                                 @endif
 
                                 <h3 class="mt-3 text-lg font-bold leading-7 text-neutral-950">
-                                    {{ $article->title }}
+                                    <a href="{{ route('artikel.detail', $article->slug) }}"
+                                        class="transition hover:text-[#FC6B01]">
+                                        {{ $article->title }}
+                                    </a>
                                 </h3>
 
                                 @if ($article->excerpt)
@@ -141,7 +161,7 @@
                                 </div>
 
                                 <a href="{{ route('artikel.detail', $article->slug) }}"
-                                    class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-neutral-950 transition hover:text-[#FC6B01]">
+                                    class="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-neutral-950 transition hover:text-[#FC6B01]">
                                     Baca Artikel
                                     <i class="bi bi-arrow-right"></i>
                                 </a>

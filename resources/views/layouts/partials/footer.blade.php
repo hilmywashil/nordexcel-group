@@ -11,7 +11,7 @@
                     profesional.
                 </p>
                 <div class="mt-7 flex gap-3">
-                    <a href="#" aria-label="Instagram" rel="noopener"
+                    <a href="https://www.instagram.com/nordexcel.dev" aria-label="Instagram" rel="noopener"
                         class="flex h-10 w-10 items-center justify-center border border-neutral-700 text-neutral-300 transition hover:border-[#FC6B01] hover:text-[#FC6B01]">
                         <i class="bi bi-instagram"></i>
                     </a>

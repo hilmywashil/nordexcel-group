@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@yield('title') - NordExcel Group</title>
+    <title>NordExcel Group - @yield('title')</title>
     <meta name="description"
         content="NordExcel Group menyediakan layanan pembuatan website profesional, toko online, landing page, sistem admin, dan solusi digital untuk bisnis.">
 

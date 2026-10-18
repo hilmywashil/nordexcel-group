@@ -14,13 +14,13 @@ class PageController extends Controller
     {
         $testimonials = Testimonial::where('status', 'published')
             ->latest()
-            ->take(4)
+            ->take(9)
             ->get();
 
         $articles = Article::with('category')
             ->where('status', 'published')
             ->latest('published_at')
-            ->take(4)
+            ->take(9)
             ->get();
 
         $clients = Client::where('status', 'published')

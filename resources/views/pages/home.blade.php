@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Beranda')
+@section('title', 'Solusi Digital untuk Bisnis Anda')
 
 @section('content')
     <section class="relative overflow-hidden pt-[76px]">
